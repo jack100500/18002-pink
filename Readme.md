@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Крюков](https://up.htmlacademy.ru/adaptive/6/user/18002).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Полетаев](https://htmlacademy.ru/profile/id148810).
 
 ---
 
