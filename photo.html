@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+<header class="header  header--index">
+  <div class="header__upper">
+	<p class="header__logo">PINK</p>
+	<button class="header__burger-button">
+	  <span class="header__icon-bar"></span>
+	  <span class="header__icon-bar"></span>
+	  <span class="header__icon-bar"></span>
+	</button>
+	<nav class="header__menu">
+	  <ul class="header__menu-list">
+		<li class="header__menu-element"><a href="#">Информация</a></li>
+		<li class="header__menu-element"><a href="#">Возможности</a></li>
+		<li class="header__menu-element"><a href="#">Отзывы</a></li>
+		<li class="header__menu-element"><a href="#">Стоимость</a></li>
+	  </ul>
+	</nav>
+  </div>
+  <div class="header__bottom">
+	<p class="header__category-title">Фотографии пользователей</p>
+  </div>
+</header>
+<main class="content">
+  <div class="content__promo-text">
+	<p>Взгляните на фотографии, которые выкладывают пользователи!
+	  <br>>ЮВидите, как не хватает ваших?</p>
+  </div>
+  <section class="photo-stream">
+	<article class="photo-stream__container">
+	  <div class="photo-stream__photo-panorama photo-stream__photo-panorama--daily">
+		<img src="img/photo-panorama.jpg" alt="panorama">
+	  </div>
+	  <div class="photo-stream__content">
+		<span class="photo-stream__username">Анна</span> <span class="photo-stream__time">(5 минут назад)</span>
+		<p class="photo-stream__comment">
+		  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои
+		  вопросы!
+		</p>
+		<a class="photo-stream__controls">Нравится: 215</a>
+	  </div>
+	</article>
+	<article class="photo-stream__container">
+	  <div class="photo-stream__photo">
+		<img src="img/photo-photo.jpg" alt="photo">
+	  </div>
+	  <div class="photo-stream__content">
+		<span class="photo-stream__username">Левон</span> <span class="photo-stream__time">(5 часов назад)</span>
+		<p class="photo-stream__comment">
+		  Вчера он на луну летал, сегодня в руки к нам попал.
+		</p>
+		<a class="photo-stream__controls">Нравится: 356</a>
+	  </div>
+	</article>
+	<article class="photo-stream__container">
+	  <div class="photo-stream__photo">
+		<img src="img/photo-photo.jpg" alt="photo">
+	  </div>
+	  <div class="photo-stream__content">
+		<span class="photo-stream__username">Антон</span> <span class="photo-stream__time">(12 часов назад)</span>
+		<p class="photo-stream__comment">
+		  Соседи будут рады!
+		</p>
+		<a class="photo-stream__controls">Нравится: 666</a>
+	  </div>
+	</article>
+	<article class="photo-stream__container">
+	  <div class="photo-stream__photo">
+		<img src="img/photo-photo.jpg" alt="photo">
+	  </div>
+	  <div class="photo-stream__content">
+		<span class="photo-stream__username">Борис</span> <span class="photo-stream__time">(20 часов назад)</span>
+		<p class="photo-stream__comment">
+		  Здесь могла быть ваша цитата о высоком и вечном.
+		</p>
+		<a class="photo-stream__controls">Нравится: 215</a>
+	  </div>
+	</article>
+	<article class="photo-stream__container">
+	  <div class="photo-stream__photo">
+		<img src="img/photo-photo.jpg" alt="photo">
+	  </div>
+	  <div class="photo-stream__content">
+		<span class="photo-stream__username">Сергей</span> <span class="photo-stream__time">(25 часов назад)</span>
+		<p class="photo-stream__comment">
+		  Самая кубанская в мире!
+		</p>
+		<a class="photo-stream__controls">Нравится: 4</a>
+	  </div>
+	</article>
+	<article class="photo-stream__container">
+	  <div class="photo-stream__photo">
+		<img src="img/photo-photo.jpg" alt="photo">
+	  </div>
+	  <div class="photo-stream__content">
+		<span class="photo-stream__username">Максим</span> <span class="photo-stream__time">(40 часов назад)</span>
+		<p class="photo-stream__comment">
+		  Где снег-то?
+		</p>
+		<a class="photo-stream__controls">Нравится: 150</a>
+	  </div>
+	</article>
+	<article class="photo-stream__container">
+	  <div class="photo-stream__photo">
+		<img src="img/photo-photo.jpg" alt="photo">
+	  </div>
+	  <div class="photo-stream__content">
+		<span class="photo-stream__username">Надежда</span> <span class="photo-stream__time">(45 часов назад)</span>
+		<p class="photo-stream__comment">
+		  Всем GM и взаимные лайки!
+		</p>
+		<a class="photo-stream__controls">Нравится: 2560</a>
+	  </div>
+	</article>
+	<p class="photo-stream__motivation-message">
+	  Затмите их всех!<br>
+	  Выкладывайте все, что накопилось в телефоне!
+	</p>
+  </section>
+  <article class="uploader">
+	<form action="http://echo.htmlacademy.ru" method="post">
+	  <div class="uploader__photo-container"></div>
+	  <div class="uploader__controls">
+		<div class="uploader__tools">
+		  <input type="radio" name="uploader__tool" id="uploader__tool--crop" checked>
+		  <label class="uploader__tool  uploader__tool--crop" for="uploader__tool--crop"></label>
+		  <input type="radio" name="uploader__tool" id="uploader__tool--contrast">
+		  <label class="uploader__tool  uploader__tool--contrast" for="uploader__tool--contrast"></label>
+		  <input type="radio" name="uploader__tool" id="uploader__tool--fill">
+		  <label class="uploader__tool  uploader__tool--fill" for="uploader__tool--fill"></label>
+		</div>
+		<div class="uploader__color-balance">
+		  <div class="uploader__scale">
+			<div class="uploader-range-control"></div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="uploader-buttons">
+		<button class="btn btn-uploader-post  btn-uploader--active">Запостить</button>
+		<button class="btn btn-uploader-cancel">Отмена</button>
+	  </div>
+	</form>
+  </article>
+</main>
+<footer class="footer">
+  <div class="main-logo">
+	<img src="img/main-logo.jpg" alt="logo">
+  </div>
+  <div class="social-buttons">
+	<ul>
+	  <li><a href="#" class="social-buttons__network  social-buttons__network--twitter"></a></li>
+	  <li><a href="#" class="social-buttons__network  social-buttons__network--facebook"></a></li>
+	  <li><a href="#" class="social-buttons__network  social-buttons__network--triangle"></a></li>
+	</ul>
+  </div>
+  <p class="copyrights">Разработано</p>
+</footer>
+<div class="modal-window  modal-window--success">
+  <div class="modal-window__content">
+	<p class="modal-window__title">Ваша заявка отправлена</p>
+	<p class="modal-window__message">
+	  Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+	  оповестим вас.
+	</p>
+  </div>
+  <div class="modal-window__controls  modal-window__controls--success">
+	<button class="btn btn-application-close">Закрыть окно</button>
+  </div>
+</div>
+<div class="modal-window  modal-window--fail">
+  <div class="modal-window__content">
+	<p class="modal-window__title">Что-то пошло не так!</p>
+	<p class="modal-window__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  </div>
+  <div class="modal-window__controls">
+	<button class="btn btn-application-okay">Ок</button>
+  </div>
+</div>
+</body>
+</html>
