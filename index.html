@@ -28,7 +28,7 @@
 </header>
 <main class="content">
   <div class="content__download">
-	<a href="#" class="content__download-button">Скачать приложение</a>
+	<a class="content__download-button" href="#">Скачать приложение</a>
 	<div class="content__platforms">
 	  <ul class="content__platforms-list">
 		<li class="content__platform  content__platform--apple"></li>
@@ -80,9 +80,6 @@
 	</div>
   </article>
   <article class="slider-pricing">
-	<input type="radio" name="slider-control" id="pricing_1">
-	<input type="radio" name="slider-control" id="pricing_2">
-	<input type="radio" name="slider-control" id="pricing_3">
 	<div class="slider-pricing__item">
 	  <div class="slider-pricing__header  slider-pricing__header--new">
 		<span class="slider-pricing__title">Стандарт</span>
@@ -94,11 +91,9 @@
 		<p class="slider-pricing__option  slider-pricing__option--unavailable">Комментарии</p>
 	  </div>
 	  <div class="slider-pricing__controls">
-		<ul>
-		  <li><label for="pricing_1"></label></li>
-		  <li><label for="pricing_2"></label></li>
-		  <li><label for="pricing_3"></label></li>
-		</ul>
+		<div class="slider-control"></div>
+		<div class="slider-control  slider-control--active"></div>
+		<div class="slider-control"></div>
 	  </div>
 	</div>
   </article>
