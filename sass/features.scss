@@ -1,0 +1,4 @@
+.download,
+.content__features { /** этот селектор временно тут, так как финальная версия module2-task1 еще не в master'e **/
+  @include highlighter();
+}
