@@ -1,3 +1,41 @@
-.header {
-  @include highlighter();
-}
+//.page-header {
+//  @include highlighter();
+//  min-height: 380px;
+//}
+//
+//.page-header__logo {
+//  @include highlighter();
+//  background: green;
+//  height: 85px;
+//}
+
+//@media screen and (min-width: $tablet-width) {
+//  .page-header {
+//    position: relative;
+//
+//    min-height: 70px;
+//    padding-bottom: 300px;
+//  }
+//
+//  .page-header__logo {
+//    position: absolute;
+//    background: green;
+//
+//    //font-size: 45px;
+//
+//    bottom: 0;
+//
+//    width: 100%;
+//    height: 300px;
+//  }
+//}
+
+//@media screen and (min-width: $desktop-width) {
+//  .page-header {
+//    padding-bottom: 648px;
+//  }
+//
+//  .page-header__logo {
+//    height: 110px;
+//  }
+//}

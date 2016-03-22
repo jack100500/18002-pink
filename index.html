@@ -4,124 +4,127 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header class="header  header--index">
-  <div class="header__upper">
-    <p class="header__logo">PINK</p>
-    <button class="header__burger-button">
-      <span class="header__icon-bar"></span>
-      <span class="header__icon-bar"></span>
-      <span class="header__icon-bar"></span>
+<header class="page-header  header--index">
+  <div class="page-header__upper">
+    <div class="page-header__logo">PINK</div>
+    <button class="page-header__burger-button">
+      <span class="page-header__icon-bar"></span>
+      <span class="page-header__icon-bar"></span>
+      <span class="page-header__icon-bar"></span>
     </button>
-    <nav class="header__menu">
-      <ul class="header__menu-list">
-        <li class="header__menu-element"><a href="#">Информация</a></li>
-        <li class="header__menu-element"><a href="#">Возможности</a></li>
-        <li class="header__menu-element"><a href="#">Отзывы</a></li>
-        <li class="header__menu-element"><a href="#">Стоимость</a></li>
-      </ul>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="#">Информация</a></li>
+          <li class="main-nav__item"><a href="#">Возможности</a></li>
+          <li class="main-nav__item"><a href="#">Отзывы</a></li>
+          <li class="main-nav__item"><a href="#">Стоимость</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
-  <div class="header__bottom  header__bottom--index">
-    <p class="header__category-title">Взгляните на жизнь иначе!</p>
+  <div class="page-header__bottom  page-header__bottom--index">
+    <p class="page-header__category-title">Взгляните на жизнь иначе!</p>
   </div>
 </header>
-<main class="content">
-  <div class="download">
-    <a class="btn btn-download" href="#">Скачать приложение</a>
-    <div class="download__platforms">
-      <ul class="download__platforms-list">
-        <li class="download__platform  download__platform--apple"></li>
-        <li class="download__platform  download__platform--android"></li>
-        <li class="download__platform  download__platform--windows"></li>
-      </ul>
-    </div>
-    <p class="download__description">
-      Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-    </p>
-  </div>
-  <div class="features">
-    <div class="features__promo-text  features__promo-text--index">
-      <p>Устали от серости мегаполиса?</p>
-      <p>Нам есть, что вам предложить!</p>
-    </div>
-    <div class="features__items">
-      <div class="feature">
-        <b class="feature__title">Поднимает настроение</b>
-        <p class="feature__description">
-          Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
-        </p>
-      </div>
-      <div class="feature">
-        <b class="feature__title">Меняет мир вокруг</b>
-        <p class="feature__description">
-          Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-        </p>
-      </div>
-      <div class="feature">
-        <b class="feature__title">Звводит новых друзей</b>
-        <p class="feature__description">
-          Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-        </p>
-      </div>
-    </div>
-  </div>
-  <article class="slider-stories">
-    <div class="slider-stories__episode">
-      <p class="slider-stories__hero-name">Николай Петров</p>
-      <p class="slider-stories__cool-story">
-        «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-        познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-      </p>
-    </div>
-    <div class="slider-stories__controls">
-      <div class="slider-control"></div>
-      <div class="slider-control  slider-control--active"></div>
-      <div class="slider-control"></div>
-    </div>
-  </article>
-  <article class="slider-pricing">
-    <div class="slider-pricing__item">
-      <div class="slider-pricing__header  slider-pricing__header--new">
-        <span class="slider-pricing__title">Стандарт</span>
-        <span class="slider-pricing__price">3,99 usd</span>
-      </div>
-      <div class="slider-pricing__content">
-        <p class="slider-pricing__option  slider-pricing__option--available">Розовый фильтр</p>
-        <p class="slider-pricing__option  slider-pricing__option--available">Смайлики</p>
-        <p class="slider-pricing__option  slider-pricing__option--unavailable">Комментарии</p>
-      </div>
-      <div class="slider-pricing__controls">
-        <div class="slider-control"></div>
-        <div class="slider-control  slider-control--active"></div>
-        <div class="slider-control"></div>
-      </div>
-    </div>
-  </article>
-</main>
-<footer class="footer">
-  <div class="footer__feedback">
-    <p class="footer__title">Остались вопросы?<br>Свяжитесь с нами!</p>
-    <div class="footer__contact">
-      <b class="footer__invitation-title">Звоните:</b>
-      <p class="footer__contact">
-        +7 (812) 555-66-66
-      </p>
-      <b class="footer__invitation-title">Пишите:</b>
-      <p class="footer__contact">
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </p>
-      <b class="footer__invitation-title">Приезжайте в гости:</b>
-      <p class="footer__contact">
-        ул. Большая
-        Конюшенная, 19/8
-      </p>
-    </div>
-  </div>
-  <div class="footer__map">
-    <!-- yandex widget code -->
-  </div>
-</footer>
+<!--<main class="content">-->
+  <!--<div class="download">-->
+    <!--<a class="btn btn-download" href="#">Скачать приложение</a>-->
+    <!--<div class="download__platforms">-->
+      <!--<ul class="download__platforms-list">-->
+        <!--<li class="download__platform  download__platform&#45;&#45;apple"></li>-->
+        <!--<li class="download__platform  download__platform&#45;&#45;android"></li>-->
+        <!--<li class="download__platform  download__platform&#45;&#45;windows"></li>-->
+      <!--</ul>-->
+    <!--</div>-->
+    <!--<p class="download__description">-->
+      <!--Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8-->
+    <!--</p>-->
+  <!--</div>-->
+  <!--<div class="features">-->
+    <!--<div class="features__promo-text  features__promo-text&#45;&#45;index">-->
+      <!--<p>Устали от серости мегаполиса?</p>-->
+      <!--<p>Нам есть, что вам предложить!</p>-->
+    <!--</div>-->
+    <!--<div class="features__items">-->
+      <!--<div class="feature">-->
+        <!--<b class="feature__title">Поднимает настроение</b>-->
+        <!--<p class="feature__description">-->
+          <!--Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!-->
+        <!--</p>-->
+      <!--</div>-->
+      <!--<div class="feature">-->
+        <!--<b class="feature__title">Меняет мир вокруг</b>-->
+        <!--<p class="feature__description">-->
+          <!--Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект-->
+        <!--</p>-->
+      <!--</div>-->
+      <!--<div class="feature">-->
+        <!--<b class="feature__title">Звводит новых друзей</b>-->
+        <!--<p class="feature__description">-->
+          <!--Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых-->
+        <!--</p>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<article class="slider-stories">-->
+    <!--<div class="slider-stories__episode">-->
+      <!--<p class="slider-stories__hero-name">Николай Петров</p>-->
+      <!--<p class="slider-stories__cool-story">-->
+        <!--«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я-->
+        <!--познакомился со своей будущей женой в комментариях к выложенной фотографии!»-->
+      <!--</p>-->
+    <!--</div>-->
+    <!--<div class="slider-stories__controls">-->
+      <!--<div class="slider-control"></div>-->
+      <!--<div class="slider-control  slider-control&#45;&#45;active"></div>-->
+      <!--<div class="slider-control"></div>-->
+    <!--</div>-->
+  <!--</article>-->
+  <!--<article class="slider-pricing">-->
+    <!--<div class="slider-pricing__item">-->
+      <!--<div class="slider-pricing__header  slider-pricing__header&#45;&#45;new">-->
+        <!--<span class="slider-pricing__title">Стандарт</span>-->
+        <!--<span class="slider-pricing__price">3,99 usd</span>-->
+      <!--</div>-->
+      <!--<div class="slider-pricing__content">-->
+        <!--<p class="slider-pricing__option  slider-pricing__option&#45;&#45;available">Розовый фильтр</p>-->
+        <!--<p class="slider-pricing__option  slider-pricing__option&#45;&#45;available">Смайлики</p>-->
+        <!--<p class="slider-pricing__option  slider-pricing__option&#45;&#45;unavailable">Комментарии</p>-->
+      <!--</div>-->
+      <!--<div class="slider-pricing__controls">-->
+        <!--<div class="slider-control"></div>-->
+        <!--<div class="slider-control  slider-control&#45;&#45;active"></div>-->
+        <!--<div class="slider-control"></div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</article>-->
+<!--</main>-->
+<!--<footer class="footer">-->
+  <!--<div class="footer__feedback">-->
+    <!--<p class="footer__title">Остались вопросы?<br>Свяжитесь с нами!</p>-->
+    <!--<div class="footer__contact">-->
+      <!--<b class="footer__invitation-title">Звоните:</b>-->
+      <!--<p class="footer__contact">-->
+        <!--+7 (812) 555-66-66-->
+      <!--</p>-->
+      <!--<b class="footer__invitation-title">Пишите:</b>-->
+      <!--<p class="footer__contact">-->
+        <!--<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>-->
+      <!--</p>-->
+      <!--<b class="footer__invitation-title">Приезжайте в гости:</b>-->
+      <!--<p class="footer__contact">-->
+        <!--ул. Большая-->
+        <!--Конюшенная, 19/8-->
+      <!--</p>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="footer__map">-->
+    <!--&lt;!&ndash; yandex widget code &ndash;&gt;-->
+  <!--</div>-->
+<!--</footer>-->
 </body>
 </html>

@@ -1,3 +1,138 @@
 @mixin highlighter() {
   border: 2px solid darkorange;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-family: Arial, sans-serif;
+  color: black;
+  font-style: normal;
+
+  background-color: white;
+}
+
+@mixin clearfix {
+  &::after {
+    content: '';
+
+    display: table;
+    clear: both;
+  }
+}
+
+$tablet-width: 700px;
+$desktop-width: 1200px;
+$background-color: darkblue;
+
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 640px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
+
+body {
+  background: $background-color url('/img/bg-back-mobile.jpg') no-repeat center top / 720px auto;
+  min-height: 3166px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  body {
+    background: $background-color url('/img/bg-back-mobile.jpg') no-repeat center top / 1178px auto;
+    min-height: 4218px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  body {
+    background: $background-color url('/img/bg-back-mobile.jpg') no-repeat center top / 1391px auto;
+    min-height: 4218px;
+  }
+}
+
+// Временно тут все, это черновик просто.
+
+// header
+
+.page-header {
+  @include highlighter();
+  min-height: 464px;
+}
+
+.page-header__logo {
+  @include highlighter();
+  background: green;
+  height: 71px;
+  margin: 0;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .page-header {
+    position: relative;
+
+    min-height: 70px;
+    //padding-bottom: 397px;
+  }
+
+  //.page-header__logo {
+  //  position: absolute;
+  //
+  //  //font-size: 45px;
+  //
+  //  bottom: 0;
+  //
+  //  width: 100%;
+  //  height: 397px;
+  //}
+}
+
+@media screen and (min-width: $desktop-width) {
+  //.page-header {
+  //  padding-bottom: 648px;
+  //}
+  //
+  //.page-header__logo {
+  //  height: 110px;
+  //}
+}
+
+// main-nav
+
+.main-nav {
+  @include highlighter;
+  position: relative;
+
+  width: 320px;
+  min-height: 50px;
+  margin: 0 auto;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__wrapper {
+  @include container;
+  @include clearfix;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    min-height: 70px;
+    margin: 0;
+  }
+}
